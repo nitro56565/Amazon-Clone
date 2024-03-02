@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            color: white;
+            font-family: Arial;
+        }
+        .upperbar{
+            background-color: #131820;
+            height: 60px;
+            display: flex;
+
+        }
+        div{
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .amazon-logo{
+            width: 120px;
+            height: auto;
+        }
+        .loc-img{
+            display: inline-block;
+            margin-top: 10px;
+        }
+        #cat{
+            width: 45px;
+            height: 38px;
+            padding-left: 5px;
+            border: 1px solid gray;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px; 
+        }
+        #search-bar{
+            height: 32px;
+            margin-left: 0%;
+            width: 600px;
+        }
+        .search-icon{
+            background-color: #F3A946;
+            width: 45px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: black ;
+            font-size: larger;
+        }
+        .lang{
+            display: flex;
+        }
+        .drop-down{
+            padding-top: 6px;
+        }
+        .flag{
+            margin-right: 5px;
+        }
+        .lowerbar{
+            background-color: #222F3F;
+            display: flex;
+            justify-content: start;
+            height: 40px;
+        }
+        .nav-bar2{
+            padding-left: 9px;
+            padding-right: 9px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-top: 5px;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .carousel-div{
+            width: 819px;
+            height: 230px;
+            
+        }
+        .c-img{
+            width: 1349px;
+        }
+        .main-section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .catalog{
+            width: 307px;
+            height: 385px;
+            background-color: grey;
+            margin: 10px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+        #back-to-top{
+            font-size: 13px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: white;
+
+            
+        }
+        #f-d-1{
+            background-color: #485668;
+            height: 19px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: flex;
+
+        }
+        #f-d-2{
+            height: 320px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #222F3F;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #f-d-3{
+            height: 68px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #222F3F;
+            border-top: 1px solid #3a4553;
+            display: flex;
+            justify-content: center;
+        }
+        .amazon-logo-2{
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="upperbar">
+            <div class="logo">
+                <a href="#">
+                    <img class="amazon-logo" src="/images/amazon_logo.png" alt="Amazon">
+                </a>
+            </div>
+            <div style="width: 90px; height: 60px; display: flex; align-items: center;">
+                <div style="display: inline-block;" >
+                    <div class="loc-img">
+                        <a href="#">
+                            <i class="fa-solid fa-location-dot" style="color: white;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div style="display: inline-block;">
+                    <div class="deliver" style="font-size: 12px;">
+                        Deliver to
+                   </div>
+                    <div class="india" style="font-size: 14px;">
+                       <strong>India</strong>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <select name="catagory" id="cat">
+                    <option value="">All</option>
+                    <option value="search-alias=aps">All Departments</option>
+                    <option value="search-alias=arts-crafts-intl-ship">Arts &amp; Crafts</option>
+                    <option value="search-alias=automotive-intl-ship">Automotive</option>
+                    <option value="search-alias=baby-products-intl-ship">Baby</option>
+                    <option value="search-alias=beauty-intl-ship">Beauty &amp; Personal Care</option>
+                    <option value="search-alias=stripbooks-intl-ship">Books</option>
+                    <option value="search-alias=fashion-boys-intl-ship">Boys' Fashion</option>
+                    <option value="search-alias=computers-intl-ship">Computers</option>
+                    <option value="search-alias=deals-intl-ship">Deals</option>
+                    <option value="search-alias=digital-music">Digital Music</option>
+                    <option value="search-alias=electronics-intl-ship">Electronics</option>
+                    <option value="search-alias=fashion-girls-intl-ship">Girls' Fashion</option>
+                    <option value="search-alias=hpc-intl-ship">Health &amp; Household</option>
+                    <option value="search-alias=kitchen-intl-ship">Home &amp; Kitchen</option>
+                    <option value="search-alias=industrial-intl-ship">Industrial &amp; Scientific</option>
+                    <option value="search-alias=digital-text">Kindle Store</option>
+                    <option value="search-alias=luggage-intl-ship">Luggage</option>
+                    <option value="search-alias=fashion-mens-intl-ship">Men's Fashion</option>
+                    <option value="search-alias=movies-tv-intl-ship">Movies &amp; TV</option>
+                    <option value="search-alias=music-intl-ship">Music, CDs &amp; Vinyl</option>
+                    <option value="search-alias=pets-intl-ship">Pet Supplies</option>
+                    <option value="search-alias=instant-video">Prime Video</option>
+                    <option value="search-alias=software-intl-ship">Software</option>
+                    <option value="search-alias=sporting-intl-ship">Sports &amp; Outdoors</option>
+                    <option value="search-alias=tools-intl-ship">Tools &amp; Home Improvement</option>
+                    <option value="search-alias=toys-and-games-intl-ship">Toys &amp; Games</option>
+                    <option value="search-alias=videogames-intl-ship">Video Games</option>
+                </select>
+                <input type="text" id="search-bar" placeholder="Search Amazon">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="lang">
+                <div class="flag">
+                    <i class="fa-solid fa-flag-usa"></i>
+                </div>
+                <div style="margin-right: 3px; font-size: 14px;">
+                    <strong>EN</strong>
+                </div>
+                <div class="drop-down">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div>
+                <div style="font-size: 12px;">
+                    Hello,Sign In
+                </div>
+                <div style="display: inline; font-size: 14px;"">
+                    <strong>Account & Lists</strong>
+                </div>
+                <div style="display: inline;">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div>
+                <div style="font-size: 12px;">
+                    Returns
+                </div>
+                <div style="font-size: 14px;">
+                    <strong>& Orders</strong>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i>
+            </div>
+        </div>
+        <div class="lowerbar">
+            <div style="display: flex; margin-left: 10px;">
+                <i class="fa-solid fa-bars" style="margin-right: 5px; font-size: 20px;"></i>
+                <div style="font-size: 14px;">
+                    <strong>All</strong>
+                </div>
+            </div>
+                <div class="nav-bar2">
+                    Today's Deal
+                </div>
+                <div class="nav-bar2">
+                    Customer Service
+                </div>
+                <div class="nav-bar2">
+                    Registry
+                </div>
+                <div class="nav-bar2">
+                    Gift Cards
+                </div>
+                <div class="nav-bar2">
+                    Sell
+                </div>
+        </div>
+    </header>
+    <div class="carousel-div">
+        <img src="images/hero_image.jpg" class="c-img" alt="carousel-image">
+    </div>
+    <div class="main-section">
+        <div class="catalog">
+
+        </div>
+        <div class="catalog"></div>
+        <div class="catalog"></div>
+        <div class="catalog"></div>
+        <div class="catalog"></div>
+        <div class="catalog"></div>
+        <div class="catalog"></div>
+        <div class="catalog"></div>
+    </div>
+    <footer>
+        <a href="#" style="text-decoration:none;">
+            <div id="f-d-1" class="footer-div">
+                <span id="back-to-top">
+                    Back to top
+                </span>
+            </div>
+        </a>
+        </div>
+        <div id="f-d-2" class="footer-div">
+            <div class="d-2-cont">
+                test1
+            </div>
+            <div class="d-2-cont">
+                test2
+            </div>
+            <div class="d-2-cont">
+                test3
+            </div>
+            <div class="d-2-cont">
+                test4
+            </div>
+        </div>
+        <div id="f-d-3" class="footer-div" >
+            <div>
+                <a href="#">
+                    <img class="amazon-logo-2" src="/images/amazon_logo.png" alt="Amazon" style="margin-left: 30%;">
+                </a>
+                <div style="font-size: 12px;">
+                    © 1996-2024, Amazon.com, Inc. or its affiliates
+                </div>
+            </div>
+    
+
+        </div>
+    </footer>
+</body>
+</html>
