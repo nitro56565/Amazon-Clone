@@ -2,7 +2,7 @@
 <p>This project is a work-in-progress clone of the popular e-commerce platform Amazon. It is built using HTML, CSS, and JavaScript.</p>
 
 <h2>Live Server</h2>
-<a>https://nitro56565.github.io/Amazon-Clone/</a>
+https://nitro56565.github.io/Amazon-Clone/
 
 <h2>Getting Started</h2>
 <p>To preview the project, simply open the index.html file in your web browser.</p>
