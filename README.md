@@ -1,4 +1,4 @@
-#Amazon Clone Project
+# Amazon Clone Project
 <p>This project is a work-in-progress clone of the popular e-commerce platform Amazon. It is built using HTML, CSS, and JavaScript.</p>
 
 <h2>Live Server</h2>
